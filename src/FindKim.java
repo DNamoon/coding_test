@@ -14,7 +14,7 @@ public class FindKim {
     }
 
     public static void main(String[] args) {
-        String[] seoul = new String[] {"Jane","park","KIM"};
+        String[] seoul = new String[] {"Jane","park","Kim"};
         FindKim findKim = new FindKim();
         findKim.solution(seoul);
     }
