@@ -2,6 +2,12 @@
  * 2단계 참고한 분 질문 해결하기 위해 3단계, 4단계 수정
  * 질문과 수정 답변 올린 곳 :
  * https://school.programmers.co.kr/questions/37421
+ *
+ * 깃 잔디 안 심어지는 이유 찾은거 같음. 터미널에서 git config --list 해보니 이메일이 git하고 달랐음
+ * ...저번에 확인 했을 때는 똑같았는데 맥북 세팅하면서 달라졌나????
+ * 어쨋든 변경.
+ * https://wellbell.tistory.com/43
+ * 이거 참고해서 지난 커밋들 잔디 심어보자.
  */
 public class RecommendNewId2 {
     static public String solution(String new_id){
