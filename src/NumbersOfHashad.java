@@ -79,6 +79,69 @@ public class NumbersOfHashad {
 
     }
 
+    public static boolean solution2(int x) {
+        boolean answer;
+        int num = x;
+        int hashad;
+        int thousand;
+        int hundred;
+        int tenth;
+        int ones;
+
+        //방법1:
+        //이렇게 했으면 굳이 x가 몇자리 수인지 신경 안 써도 됐을텐데...!
+        thousand = num / 1000;
+        num %= 1000;
+        hundred = num / 100;
+        num %= 100;
+        tenth = num / 10;
+        num %= 10;
+        ones = num;
+
+        hashad = thousand+hundred+tenth+ones;
+
+        answer = (x % hashad == 0)?true:false;
+
+        return answer;
+    }
+
+    public static boolean solution3(int x) {
+
+        boolean answer;
+        int hashad;
+        int thousand;
+        int hundred;
+        int tenth;
+        int ones;
+
+        //방법1-2:
+        thousand = x / 1000;
+        hundred = (x%1000) / 100;
+        tenth = (x%100) / 10;
+        ones = x%10;
+
+        hashad = thousand+hundred+tenth+ones;
+
+        answer = (x % hashad == 0)?true:false;
+
+        return answer;
+    }
+
+    public static boolean solution4(int x) {
+
+        boolean answer;
+        int num = x;
+        int hashad=0;
+
+        //방법2: 뒷자리부터 계산
+        while(num!=0){
+            hashad += num%10;  //맨 처음에 일의 자릿수 부를 나타내고 더한다.
+            num /=10;          //다음 작업을 위해 num을 10으로 나눈 몫 -> 맨 뒷자리를 없애고 수를 다시 세팅한다.
+        }
+        answer = (x % hashad == 0)?true:false;
+
+        return answer;
+    }
     public static void main(String[] args) {
         System.out.println("x=12  -> " + solution(2115) );
     }
