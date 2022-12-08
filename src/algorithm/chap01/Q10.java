@@ -1,10 +1,10 @@
+/**
+ * 22.12.08
+ * 양의 정수를 입력하고 자릿수를 출력하는 프로그램을 작성하시오.
+ */
 package algorithm.chap01;
 
 import java.util.Scanner;
-
-/**
- * 양의 정수를 입력하고 자릿수를 출력하는 프로그램을 작성하시오.
- */
 public class Q10 {
     static String solution1() {
         Scanner sc = new Scanner(System.in);

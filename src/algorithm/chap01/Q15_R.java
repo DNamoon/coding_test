@@ -1,8 +1,8 @@
-package algorithm.chap01;
-
 /**
+ * 22.12.08
  * p.49 - n단의 피라미드를 출력하는 메서드를 작성하세요.
  */
+package algorithm.chap01;
 public class Q15_R {
 //    static void spira(int n) {
 //        int none = ((n-1)*2+1)/2;

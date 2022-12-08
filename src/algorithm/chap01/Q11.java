@@ -1,8 +1,9 @@
-package algorithm.chap01;
 
 /**
+ * 22.12.08
  * p.46 - 위쪽과 왼쪽에 곱하는 수가 있는 구구단 곱셈표를 출력하는 프로그램을 작성하세요.
  */
+package algorithm.chap01;
 public class Q11 {
     public static void main(String[] args) {
         System.out.println("   | 1 2 3 4 5 6 7 8 9");

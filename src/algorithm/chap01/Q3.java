@@ -1,8 +1,8 @@
-package algorithm.chap01;
-
 /**
+ * 22.12.07
  * 네 값의 최솟값을 구하는 min4 메서드
  */
+package algorithm.chap01;
 public class Q3 {
     static int min4(int a, int b, int c, int d) {
         int min = a;

@@ -1,8 +1,8 @@
-package algorithm.chap01;
-
 /**
+ * 22.12.07
  * p.31 - 정수 a,b를 포함하여 그 사이의 모든 정수의 합을 구하여 반환하는 메세더를 작성하세요.
  */
+package algorithm.chap01;
 public class Q8 {
     static int sumof(int a, int b) {
         int sum = 0;

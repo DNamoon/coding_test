@@ -1,8 +1,8 @@
-package algorithm.chap01;
-
 /**
- * p.30 - 1부터 n까지 더하는 알고리즘에서 while문에서 종료 될 때 i가 n+1이 되는지 확인하시오. 
+ * 22.12.07
+ * p.30 - 1부터 n까지 더하는 알고리즘에서 while문에서 종료 될 때 i가 n+1이 되는지 확인하시오.
  */
+package algorithm.chap01;
 public class Q6 {
     static int q6(int n) {
         int sum = 0;

@@ -1,8 +1,8 @@
-package algorithm.chap01;
-
 /**
+ * 22.12.08
  * p.49 직각이등변삼각형을 출력하는 부분을 아래와 같은 형식의 메서드로 작성하세요.
  */
+package algorithm.chap01;
 public class Q14_R {
     //왼쪽 아래가 직각인 이등변삼각형을 출력
     static void triangleLB(int n) {

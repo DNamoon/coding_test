@@ -1,10 +1,10 @@
+/**
+ * 22.12.08
+ * p. 35 - 두 변수 a, b에 정수를 입력하고 b-a를 출력하는 프로그램을 작성하세요.
+ */
 package algorithm.chap01;
 
 import java.util.Scanner;
-
-/**
- * p. 35 - 두 변수 a, b에 정수를 입력하고 b-a를 출력하는 프로그램을 작성하세요.
- */
 public class Q9 {
     public static String q9(int a,int b){
         //여기서 반복해야겠다. 입력받고

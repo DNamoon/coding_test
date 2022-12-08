@@ -1,8 +1,8 @@
-package algorithm.chap01;
-
 /**
+ * 22.12.07
  * p.19 - 세 값의 최솟값을 구하는 min3 메서드
  */
+package algorithm.chap01;
 public class Q2 {
     static int min3(int a, int b, int c) {
         int min = a;
