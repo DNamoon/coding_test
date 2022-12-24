@@ -81,6 +81,7 @@ public class Q1 {
                     break;
 
                 case 7 :  //스택 데이터 개수는?
+                    /** 굳이 try/catch 안 해도 될건데 왜 했지? */
                     try {
                         x = s.size();
                         System.out.println("스택에 쌓여있는 데이터 개수는 " + x + "개입니다.");
@@ -91,6 +92,7 @@ public class Q1 {
 
                 case 8 : // 스택이 비어있는가?
                     boolean empty = s.isEmpty();
+                    /** 이거 삼항연산자로 간단하게 할 수 있잖아 */
                     if(empty)
                         System.out.println("예. 스택이 비어있습니다.");
                     else {
@@ -100,6 +102,7 @@ public class Q1 {
 
                 case 9 : //스택이 가득 차 있는가?
                     boolean full = s.isFull();
+                    /** 이거 삼항연산자로 간단하게 할 수 있잖아 */
                     if (full) {
                         System.out.println("예. 스택이 가득 차 있습니다.");
                     } else {

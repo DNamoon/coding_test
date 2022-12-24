@@ -115,7 +115,7 @@ public class IntStack4_1 {
     }
 
     public static void main(String[] args) {
-        IntStack4_1 s = new IntStack4_1(64);
+        IntStack4_1 s = new IntStack4_1(4);
         s.push(1);
         s.push(2);
         s.push(3);
