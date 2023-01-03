@@ -14,27 +14,38 @@ import java.io.*;
 public class Q10953 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         //System.out.println("테스트 케이스 개수를 입력하세요.");
         int testCase = Integer.parseInt(br.readLine());
         //System.out.println("숫자 2개를 ','를 이용하여 입력하세요.");
 
+//        while(testCase > 0) {
+//            //입력받기
+//            String nums = br.readLine();
+//
+//            //입력받은 문자열을 ","기준으로 분리하고 숫자로 바꾸기
+//            String[] splitNum = nums.split(",");
+//            int firstNum = Integer.parseInt(splitNum[0]);
+//            int secondNum = Integer.parseInt(splitNum[1]);
+//
+//            int result = firstNum+secondNum;
+//            //분리한 숫자를 더해서 출력하기
+//            System.out.println(firstNum+secondNum);
+//
+//            testCase--;
+//        }
+//        br.close();
+
         while(testCase > 0) {
-            //입력받기
-            String nums = br.readLine();
-
-            //입력받은 문자열을 ","기준으로 분리하고 숫자로 바꾸기
-            String[] splitNum = nums.split(",");
-            int firstNum = Integer.parseInt(splitNum[0]);
-            int secondNum = Integer.parseInt(splitNum[1]);
-
-            int result = firstNum+secondNum;
-            //분리한 숫자를 더해서 출력하기
-            System.out.println(firstNum+secondNum);
-
+            String[] num = br.readLine().split(",");
+            bw.write(Integer.parseInt(num[0])+Integer.parseInt(num[1]) + "");
+            bw.flush();
+            System.out.println();
             testCase--;
         }
         br.close();
+        bw.close();
 
     }
 }
