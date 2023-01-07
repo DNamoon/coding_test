@@ -9,7 +9,7 @@
  * 첫째 줄부터 N번째 줄까지 차례대로 별을 출력한다.
  * https://www.acmicpc.net/problem/2439
  */
-package baekjoon;
+package baekjoon.input_output;
 
 import java.io.*;
 

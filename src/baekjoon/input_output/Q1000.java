@@ -2,7 +2,7 @@
  * 23.01.02
  * 1000 - A+B 출력하기
  */
-package baekjoon;
+package baekjoon.input_output;
 
 import java.util.Scanner;
 
