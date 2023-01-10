@@ -8,7 +8,7 @@
  * 첫째 줄에 주어진 정수 N개의 최솟값과 최댓값을 공백으로 구분해 출력한다.
  * https://www.acmicpc.net/problem/10818
  */
-package baekjoon;
+package baekjoon.input_output;
 
 import java.io.*;
 import java.util.StringTokenizer;

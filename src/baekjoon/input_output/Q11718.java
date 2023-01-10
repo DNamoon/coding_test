@@ -10,7 +10,7 @@
  * 입력받은 그대로 출력한다.
  * https://www.acmicpc.net/problem/11718
  */
-package baekjoon;
+package baekjoon.input_output;
 
 import java.io.*;
 import java.util.StringTokenizer;

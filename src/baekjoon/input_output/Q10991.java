@@ -8,7 +8,7 @@
  * 첫째 줄부터 N번째 줄까지 차례대로 별을 출력한다.
  * https://www.acmicpc.net/problem/10991
  */
-package baekjoon;
+package baekjoon.input_output;
 
 import java.io.*;
 /** 간단한 방법 + 다중 for문 도전 해보길 (사실 다중 for문은 안 해도 될거 같은데 어떻게 하는지는 알면 좋을거 같아서)

@@ -7,7 +7,7 @@
  * 출력
  * 1부터 n까지 합을 출력한다.
  */
-package baekjoon;
+package baekjoon.input_output;
 
 import java.io.*;
 

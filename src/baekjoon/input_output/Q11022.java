@@ -11,7 +11,7 @@
  * x는 테스트 케이스 번호이고 1부터 시작하며, C는 A+B이다.
  * https://www.acmicpc.net/problem/11022
  */
-package baekjoon;
+package baekjoon.input_output;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

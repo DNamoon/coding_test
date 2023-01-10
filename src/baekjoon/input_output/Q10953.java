@@ -7,7 +7,7 @@
  *
  * https://www.acmicpc.net/problem/10953
  */
-package baekjoon;
+package baekjoon.input_output;
 
 import java.io.*;
 

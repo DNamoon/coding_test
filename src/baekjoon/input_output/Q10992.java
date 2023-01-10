@@ -4,7 +4,7 @@
  * 예제를 보고 규칙을 유추하여 별을 찍어보세요.
  * https://www.acmicpc.net/problem/10992
  */
-package baekjoon;
+package baekjoon.input_output;
 
 import java.io.*;
 

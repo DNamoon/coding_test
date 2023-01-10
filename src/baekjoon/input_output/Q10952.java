@@ -8,7 +8,7 @@
  *
  * https://www.acmicpc.net/problem/10952
  */
-package baekjoon;
+package baekjoon.input_output;
 
 import java.util.ArrayList;
 import java.util.List;
