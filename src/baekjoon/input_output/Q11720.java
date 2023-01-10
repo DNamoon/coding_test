@@ -7,7 +7,7 @@
  *
  * https://www.acmicpc.net/problem/11720
  */
-package baekjoon;
+package baekjoon.input_output;
 
 import java.io.*;
 import java.util.StringTokenizer;

@@ -10,7 +10,7 @@
  * 단어의 길이가 10의 배수가 아닌 경우에는 마지막 줄에는 10개 미만의 글자만 출력할 수도 있다.
  * https://www.acmicpc.net/problem/11721
  */
-package baekjoon;
+package baekjoon.input_output;
 
 import java.io.*;
 
