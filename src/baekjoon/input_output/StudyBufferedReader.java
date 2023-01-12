@@ -2,7 +2,7 @@
  * 23.01.02
  * Scanner 말고 BufferedReader가 처리속도가 빠르다고 해서 공부하는 중.
  */
-package baekjoon;
+package baekjoon.input_output;
 
 import java.io.*;
 

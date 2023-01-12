@@ -1,7 +1,7 @@
 /**
  * StringTokenizer test
  */
-package baekjoon;
+package baekjoon.input_output;
 
 import java.io.BufferedReader;
 import java.io.IOException;
