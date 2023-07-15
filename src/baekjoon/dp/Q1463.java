@@ -15,6 +15,8 @@ import java.io.*;
 
 public class Q1463 {
 
+
+
     public static int method1(int N) {
         int count = 0;
         //1,2,3 방법
