@@ -1,6 +1,7 @@
 package programmers.lv0;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * https://school.programmers.co.kr/learn/courses/30/lessons/181868
@@ -32,7 +33,7 @@ public class SplitPractice2 {
         return answer;
     }
 
-    //실패 2 - 60점
+    //실패 2 - 60
     public static ArrayList<String> solution2(String my_string) {
         String[] strArr = my_string.split(" ");
         ArrayList<String> answer = new ArrayList<>();
@@ -62,8 +63,23 @@ public class SplitPractice2 {
         return answer;
     }
 
+    public static ArrayList<String> solution3(String my_string) {
+
+        ArrayList<String> answer = new ArrayList<>();
+
+        String[] strArr = my_string.split(" ");
+
+        for (String s : strArr) {
+            if (!s.contains(" ") && s.length() > 0) {  //이 부분에 뒷 부분 조건 추가하니까 성공!
+                answer.add(s);
+            }
+        }
+
+        return answer;
+    }
+
     public static void main(String[] args) {
         String str = " i    love  you";
-        System.out.println(solution2(str));
+        System.out.println(solution3(str));
     }
 }
