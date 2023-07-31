@@ -11,7 +11,7 @@ package programmers.lv0;
  *
  */
 
-//실패!!!!
+//실패!!!! -> 다시 성공
 public class SafetyZone {
     public static int solution(int[][] boards) {
         int answer = 0;
@@ -96,32 +96,51 @@ public class SafetyZone {
         return answer;
     }
 
-//    public static int solution2(int[][] boards) {
-//        int[][] directions = {{0, 1}, {1, 0}, {-1, 0}, {0, -1}};  //우하좌상
-//
-//        int i = 0;
-//        int j = 0;
-//        while (i < boards.length) {
-//            while (j < boards[i].length) {
-//                int tmp = boards[i][j];
-//
-//                if (tmp == 1) {
-//                    for (int[] d : directions) {
-//                        i += d[0];
-//                        j += d[1];
-//                        while (i > 0 && i < boards.length - 1 && j > 0 && j < boards[i].length) {
-//
-//                        }
-//                    }
-//                }
-//                j++;
-//            }
-//            i++;
-//        }
-//    }
+    public static int solution2(int[][] boards) {
+//        int[] dx = {-1, 0, 1, -1, 1, -1, 0, 1};
+//        int[] dy = {-1, -1, -1, 0, 0, 1, 1, 1};
+        int[][] directions = {{-1, -1}, {0, -1}, {1, -1}, {-1, 0}, {1, 0}, {-1, 1}, {0, 1}, {1, 1}};
+        int answer = 0;
+
+        for (int i = 0; i < boards.length; i++) {
+            for (int j = 0; j < boards[i].length; j++) {
+
+                if (boards[i][j] == 1) {
+                    for (int[] direction : directions) {
+                        int nx = i + direction[0];
+                        int ny = j + direction[1];
+
+                        if (nx >= 0 && nx < boards.length && ny >= 0 && ny < boards[i].length) {
+//                            findBomb(boards, nx, ny);
+                            if (boards[nx][ny] != 1) {
+                                boards[nx][ny] = -1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        for (int k = 0; k < boards.length; k++) {
+            for (int l = 0; l < boards[k].length; l++) {
+                if (boards[k][l] == 0) {
+                    answer += 1;
+                }
+            }
+        }
+
+        return answer;
+    }
+
+    public static void findBomb(int[][] boards, int x, int y) {
+        if (boards[x][y] != 1) {
+            boards[x][y] = -1;
+        }
+    }
 
     public static void main(String[] args) {
-        int[][] boards = {{0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 1, 0, 0}, {0, 0, 0, 0, 0}};
-        System.out.println(solution(boards));
+        int[][] boards = {{0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 1, 1, 0}, {0, 0, 0, 0, 0}};
+        int[][] boards2 = {{0, 0, 1}, {0, 0, 0}, {0, 0, 0}};
+        System.out.println(solution2(boards));
     }
 }
